@@ -13,6 +13,7 @@ spring:
     post: 5672
     username: admin
     password: admin
+
 server:
   port: 8101
 
