@@ -4,6 +4,11 @@ spring:
   cloud:
     config:
       override-none: true
+  rabbitmq:
+    host: 192.168.126.129
+    post: 5672
+    username: admin
+    password: admin
 server:
   port: 8201
 
@@ -21,3 +26,8 @@ management:
     web:
       exposure:
         include: hystrix.stream
+
+
+  wget https://github.com/rabbitmq/erlang-rpm/releases/download/v21.3.8.12/erlang-21.3.8.12-1.el7.x86_64.rpm
+  rpm -ivh erlang-21.3.8.12-1.el7.x86_64.rpm --force --nodeps
+ 
